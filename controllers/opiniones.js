@@ -1,6 +1,5 @@
 'use strict'
-var bcrypt = require('bcrypt-nodejs')
-var Opinion = require('../models/opniones');
+var Opinion = require('../models/opiniones');
 
 function pruebas(req, res) {
   res.status(200).send({
@@ -16,10 +15,10 @@ function GuardandoOpiniones(req, res) {
   opinion.opinion = parametro.opinion;
   opinion.motivo = parametro.motivo;
   opinion.locacion = parametro.locacion;
-        usuario.save((err, userStored) => {
+  opinion.save((err, userStored) => {
           if (err) {
             res.status(500).send({
-              message: 'Error al guardar el usuario'
+              message: 'Error al guardar'
             });
           } else {
             if (!userStored) {
