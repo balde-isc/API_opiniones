@@ -6,7 +6,7 @@ var Schema = mongoose.Schema;
 var OpinionSchema = Schema({
     opinion: String,
     motivo: String,
-    email: {
+    locacion: {
         latitude: Number,
         longitude: Number
     }
