@@ -4,6 +4,7 @@
   "description": "Servicio REST para obtener datos de las opiniones generadas por el cliente ionic",
   "main": "server.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
